@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Master UI</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="d-flex" id="wrapper">
+        <!-- navbar -->
+
+        <nav id="sidebarMenu" class="collapse d-lg-block sidebar collapse bg-white">
+
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- <a class="navbar-brand ms-2" href="#">Brand</a> -->
+                <!-- Additional navbar content can go here -->
+            </div>
+            <div class="position-sticky">
+              <div class="list-group list-group-flush mx-3 mt-4">
+                <a href="#" class="list-group-item list-group-item-action py-2 ripple active">
+                  <i class="fas fa-chart-area fa-fw me-3"></i><span>Webiste traffic</span>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action py-2 ripple"><i
+                    class="fas fa-lock fa-fw me-3"></i><span>Password</span></a>
+                <a href="#" class="list-group-item list-group-item-action py-2 ripple"><i
+                    class="fas fa-chart-line fa-fw me-3"></i><span>Analytics</span></a>
+              </div>
+            </div>
+          </nav>
+   
+        
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid px-4">
+                <div class="row my-4">
+                    <div class="col-lg-12">
+                        <h1 class="mt-4" id="master">Master</h1>
+                        <div class="d-flex justify-content-start mb-4"  id="maincustomeanditemsection">
+                            <!-- Added ID for JavaScript interaction -->
+                            <div class="card mx-2 my-2 col-lg-6 col-md-6 col-sm-12 h-100" id="customerCard">
+                                <div class="card-body">
+                                    <h5 class="card-title">Customer</h5>
+                                    <p class="card-text">Read or Create customer data</p>
+                                </div>
+                            </div>
+                            <!-- Added ID for JavaScript interaction -->
+                            <div class="card mx-2 my-2 col-lg-6 col-md-6 col-sm-12 h-100" id="itemCard">
+                                <div class="card-body">
+                                    <h5 class="card-title">Items</h5>
+                                    <p class="card-text">Read or Create items data</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Customer Details - Hidden by default -->
+                        <div id="customerDetails" class="d-none">
+                        <div>
+                            <h3>Customers</h3>
+                            <p class="text-end mt-4" id="addcustomer">+ Add</p>
+                        </div>
+                            <div class="d-flex flex-wrap">
+                                <div class="card mx-2 my-2 col-lg-3 col-md-6 col-sm-12">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Gupta Enterprise Pvt. Ltd.</h5>
+                                        <span class="badge bg-success">Active</span>
+                                    </div>
+                                </div>
+                                <div class="card mx-2 my-2 col-lg-3 col-md-6 col-sm-12" >
+                                    <div class="card-body">
+                                        <h5 class="card-title">Mahesh Industries Pvt. Ltd.</h5>
+                                        <span class="badge bg-success">Active</span>
+                                    </div>
+                                </div>
+                                <div class="card mx-2 my-2 col-lg-3 col-md-6 col-sm-12" >
+                                    <div class="card-body">
+                                        <h5 class="card-title">Omkar and Brothers Pvt. Ltd.</h5>
+                                        <span class="badge bg-danger">In-Active</span>
+                                    </div>
+                                </div>
+                                <div class="card mx-2 my-2 col-lg-4 col-md-6 col-sm-12" >
+                                    <div class="card-body">
+                                        <h5 class="card-title">Omkar and Brothers Pvt. Ltd.</h5>
+                                        <span class="badge bg-danger">In-Active</span>
+                                    </div>
+                                </div>
+                                <div class="card mx-2 my-2 col-lg-4 col-md-6 col-sm-12" >
+                                    <div class="card-body">
+                                        <h5 class="card-title">Omkar and Brothers Pvt. Ltd.</h5>
+                                        <span class="badge bg-danger">In-Active</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Item Details - Hidden by default -->
+                        <div id="itemDetails" class="d-none">
+                            <div>
+                            <h3>Items</h3>
+                            <p class=" text-end mt-4 " id="additem">+ Add</p>
+                            </div>
+                            <div class="d-flex flex-wrap ">
+                                <div class="card mx-2 my-2 col-lg-4 col-md-6 col-sm-12" style="width: 18rem;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Laptop</h5>
+                                        <span class="badge bg-success">Active</span>
+                                    </div>
+                                </div>
+                                <div class="card mx-2 my-2" style="width: 18rem;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Headphones</h5>
+                                        <span class="badge bg-danger">In-Active</span>
+                                    </div>
+                                </div>
+                                <div class="card mx-2 my-2" style="width: 18rem;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Mobile Phone</h5>
+                                        <span class="badge bg-success">Active</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="container-add-customer" class="d-none">
+            <h2>Add New Customer</h2>
+            <form>
+                <div class="row mb-3">
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <label for="customerName" class="form-label">Customer Name</label>
+                        <input type="text" class="form-control" id="customerName" placeholder="Enter customer name">
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <label for="customerAddress" class="form-label">Customer Address</label>
+                        <input type="text" class="form-control" id="customerAddress" placeholder="Enter customer address">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <label for="panCard" class="form-label">Customer Pan Card Number</label>
+                        <input type="text" class="form-control" id="panCard" placeholder="Enter PAN card number">
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <label for="gstNumber" class="form-label">Customer GST Number</label>
+                        <input type="text" class="form-control" id="gstNumber" placeholder="Enter GST number">
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="customerStatus" class="form-label">Customer Status</label>
+                    <select class="form-select" id="customerStatus">
+                        <option selected>Active</option>
+                        <option>Inactive</option>
+                    </select>
+                </div>
+                <div class="d-flex justify-content-between">
+                    <button type="button" class="btn btn-danger">Cancel</button>
+                    <button type="submit" class="btn btn-success">Create</button>
+                </div>
+            </form>
+        </div>
+
+
+    <!-- add new item -->
+    <div id="container-add-item" class="d-none">
+        <h2>Add New Item</h2>
+        <form>
+            <div class="row mb-3 ">
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <label for="itemName" class="form-label">Item Name</label>
+                    <input type="text" class="form-control" id="itemName" placeholder="Enter item name">
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <label for="sellingPrice" class="form-label">Customer Selling Price</label>
+                    <input type="text" class="form-control" id="sellingPrice" placeholder="Enter selling price">
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="itemStatus" class="form-label">Customer Status</label>
+                <select class="form-select" id="itemStatus">
+                    <option selected>Active</option>
+                    <option>Inactive</option>
+                </select>
+            </div>
+            <div class="d-flex justify-content-between">
+                <button type="button" class="btn btn-danger ">Cancel</button>
+                <button type="submit" class="btn btn-success">Create</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Get references to the Customer and Item cards
+const customerCard = document.getElementById('customerCard');
+const itemCard = document.getElementById('itemCard');
+const customeranditem = document.getElementById('maincustomeanditemsection');
+const addcustomer = document.getElementById('addcustomer');
+const containeradditem = document.getElementById('container-add-item');
+const master = document.getElementById('master');
+
+// Get references to the details sections
+const customerDetails = document.getElementById('customerDetails');
+const itemDetails = document.getElementById('itemDetails');
+const containeraddcustomer =document.getElementById('container-add-customer');
+const additem = document.getElementById('additem');
+
+
+
+// Add click event to the Customer card
+customerCard.addEventListener('click', () => {
+    // Toggle visibility of customer details and hide item details
+    customerDetails.classList.toggle('d-none');
+    itemDetails.classList.add('d-none');
+    master.remove('master');
+    customeranditem.remove('maincustomeanditemsection');
+});
+
+// Add click event to the Item card
+itemCard.addEventListener('click', () => {
+    // Toggle visibility of item details and hide customer details
+    itemDetails.classList.toggle('d-none');
+    customerDetails.classList.add('d-none');
+    master.remove('master');
+    customeranditem.remove('maincustomeanditemsection');
+});
+
+addcustomer.addEventListener('click', () => {
+    containeraddcustomer.classList.toggle('d-none');
+    itemDetails.classList.add('d-none');
+    master.remove('master');
+    customerDetails.remove('customerDetails');
+    customeranditem.remove('maincustomeanditemsection');
+});
+
+additem.addEventListener('click', () => {
+    containeradditem.classList.toggle('d-none');
+    itemDetails.classList.add('d-none');
+    itemDetails.remove('itemDetails');
+    customeranditem.remove('maincustomeanditemsection');
+});
+    </script>
+</body>
+</html>
